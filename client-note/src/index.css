@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading svg{
+    font-size: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    animation: text 1s ease-in-out infinite;
+}
+@keyframes text{
+    50%{ opacity: 0.1 }
+}
+.loading polygon{
+    stroke-dasharray: 22;
+    stroke-dashoffset: 1;
+    animation: dash 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 
+    infinite alternate-reverse;
+}
+@keyframes dash{
+    to {stroke-dashoffset: 234;}
+}
+
+
+.faceBtn {
+    width: 45%;
+}
+#fb-login.dark {
+    background: #45619d;
+    color: #fff;
+    width: 100%;
+}
+#fb-login img {
+    border-radius: 10px !important;
+}
+#fb-login.dark {
+    background: #45619d;
+    color: #fff;
+    border: none;
+    height: 43px !important;
+    border-radius: 10px;
+    padding-right: 5px;
+}
+.googleBtn {
+    width: 50%;
+}
+.googleBtn button {
+    border-radius: 10px 10px 10px 10px !important;
+    width: 95%;
+}
+.ql-container.ql-snow, .ql-toolbar.ql-snow {
+    border: none !important;
+}
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+    border-top: 0px;
+    border-radius: 0 0 5px 5px;
+}
+
+.quill {
+    background: #2d2d2d !important;
+    color: white !important;
+}
+.quill > .ql-container > .ql-editor.ql-blank::before{
+    font-size: 16px;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.mon_bloc{
+    transition: all .4s ease;
+}
+.mon_bloc:hover{
+box-shadow: 0 0 1px 1px black;
+transition: all .4s ease;
+cursor: pointer;
+}
+
+.couleur{
+    display: none;
+}
+
+.palette:hover .couleur{
+    display: block;
+}
+
+
+.couleurRouge{background-color: rgb(153, 0, 0);}
+.couleurBlanc{background-color: rgb(244, 244, 244);color: black;}
+.couleurDark{background-color: #2d2d2d;}
+.couleurJaune{background-color: #e0d100;color: black;}
+.couleurVert{background-color: #1db100;}
+.couleurBleu{background-color: #004db1;}
+.couleurRose{background-color: #e60099;}
+
+
+.inpuForEdit .quill {
+    color: black !important;
+    width: 500px;
+    min-height: 220px;
+    background: white !important;
+    border-radius: 0 0 10px 10px;
+}
+
+.inpuForEdit input {
+    width: 500px;
+    background: white;
+}
+
+
+/* CSS POUR LE CHARGEMENT */
+.la-ball-spin-rotate,.la-ball-spin-rotate>div{position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.la-ball-spin-rotate{display:block;font-size:0;color:#fff;width:32px;height:32px;-webkit-animation:2s linear infinite ball-spin-rotate;-moz-animation:2s linear infinite ball-spin-rotate;-o-animation:2s linear infinite ball-spin-rotate;animation:2s linear infinite ball-spin-rotate}.la-ball-spin-rotate.la-dark{color:#fff}.la-ball-spin-rotate>div{display:inline-block;float:none;background-color:currentColor;border:0 solid currentColor;position:absolute;top:0;width:60%;height:60%;border-radius:100%;-webkit-animation:2s ease-in-out infinite ball-spin-bounce;-moz-animation:2s ease-in-out infinite ball-spin-bounce;-o-animation:2s ease-in-out infinite ball-spin-bounce;animation:2s ease-in-out infinite ball-spin-bounce}.la-ball-spin-rotate>div:last-child{top:auto;bottom:0;-webkit-animation-delay:-1s;-moz-animation-delay:-1s;-o-animation-delay:-1s;animation-delay:-1s}.la-ball-spin-rotate.la-sm{width:16px;height:16px}.la-ball-spin-rotate.la-2x{width:64px;height:64px}.la-ball-spin-rotate.la-3x{width:96px;height:96px}@-webkit-keyframes ball-spin-rotate{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-moz-keyframes ball-spin-rotate{100%{-moz-transform:rotate(360deg);transform:rotate(360deg)}}@-o-keyframes ball-spin-rotate{100%{-o-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes ball-spin-rotate{100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes ball-spin-bounce{0%,100%{-webkit-transform:scale(0);transform:scale(0)}50%{-webkit-transform:scale(1);transform:scale(1)}}@-moz-keyframes ball-spin-bounce{0%,100%{-moz-transform:scale(0);transform:scale(0)}50%{-moz-transform:scale(1);transform:scale(1)}}@-o-keyframes ball-spin-bounce{0%,100%{-o-transform:scale(0);transform:scale(0)}50%{-o-transform:scale(1);transform:scale(1)}}@keyframes ball-spin-bounce{0%,100%{-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);transform:scale(0)}50%{-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);transform:scale(1)}}
+
+
+@media (max-width: 767px) {
+    .formulaire{
+        width: 100%;
+        padding: 2rem 1%;
+    }
+    .inputTitre, .inpuForEdit {
+        width: 80%;
+    } 
+    .inputTitre input {
+        width: 100%;
+    }
+    .inpuForEdit .quill, .inpuForEdit input {
+        width: 80%;
+    }
+    .barGauche {
+        height: 65px !important;
+        position: fixed;
+        bottom: 0;
+        width: 100% !important;
+        z-index: 2;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .blocPrincipal {
+        display: flex;
+        flex-direction: column;
+    }
+    .blocContenu {
+        width: 100% !important;
+        margin-bottom: 100px;
+    }
+}

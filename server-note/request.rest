@@ -1,0 +1,69 @@
+POST http://localhost:5000/api/inscription
+Content-Type: application/json
+
+{
+    "nom": "Jojo",
+    "email": "horebtechnology2021@gmail.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5000/api/activation
+Content-Type: application/json
+
+{
+    "active_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZXdVc2VyIjp7Im5vbSI6IkRhdmlkIE5BWU8iLCJlbWFpbCI6ImRhdmpvc25heW9AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTIkWktHWmRqWXkwZDlGaW5jdkJ3eEVxLm91TUN6MFZ0d3FyM1RoV3E4elUySnhBVERqaURVcDYifSwiaWF0IjoxNjY4ODUxODY2LCJleHAiOjE2Njg4NTIxNjZ9._bwuqcqQWlUpOiaB_pC2bCrDYPXNLhRfC9QeC1CImgA"
+}
+
+###
+POST http://localhost:5000/api/connexion
+Content-Type: application/json
+
+{
+    "email": "davjosnayo@gmail.com",
+    "password": "1234567"
+}
+
+###
+POST http://localhost:5000/api/mot-de-passe
+Content-Type: application/json
+
+{
+    "email": "davjosayo@gmail.com"
+}
+
+###
+GET http://localhost:5000/api/deconnexion
+Content-Type: application/json
+
+###
+GET http://localhost:5000/api/refresh_token
+Content-Type: application/json
+
+###
+POST http://localhost:5000/api/reinitialiser-mot-de-passe
+Content-Type: application/json
+
+{
+    "email": "davjosnayo@gmail.com",
+    "code": "LJLKAR18S",
+    "newPassword": "1234567"
+}
+
+###
+GET http://localhost:5000/api/notes
+Content-Type: application/json
+
+###
+POST http://localhost:5000/api/note
+Content-Type: application/json
+
+{
+    "titre": "Titre 1",
+    "contenu": "Contenu titre 1",
+    "auteurEmail": "horebtechnology2021@gmail.com"
+}
+
+###
+GET http://localhost:5000/api/mon-test
+Content-Type: application/json
